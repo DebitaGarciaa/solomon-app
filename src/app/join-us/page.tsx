@@ -7,5 +7,5 @@ export const metadata: Metadata = {
   description: 'Temukan karir yang sesuai dengan potensi Anda. Lihat lowongan kerja terbaru di Solomon.',
   keywords: ['lowongan kerja', 'karir', 'recruitment', 'jobs'],
 };
-
+//halooo ciaaa
 export default RecruitmentPage;
