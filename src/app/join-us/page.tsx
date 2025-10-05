@@ -8,4 +8,5 @@ export const metadata: Metadata = {
   keywords: ['lowongan kerja', 'karir', 'recruitment', 'jobs'],
 };
 //halooo ciaaa
+//IYAAAA
 export default RecruitmentPage;
