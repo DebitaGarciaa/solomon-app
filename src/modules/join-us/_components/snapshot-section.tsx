@@ -4,7 +4,6 @@
 import React from 'react';
 import type { StatsResponse } from '@/types/job.api';
 
-// Fungsi: Menampilkan metrik pertumbuhan perusahaan
 interface SnapshotSectionProps {
   stats: StatsResponse | undefined;
   isLoading: boolean;
@@ -13,7 +12,6 @@ interface SnapshotSectionProps {
 const SnapshotSection: React.FC<SnapshotSectionProps> = ({ stats, isLoading }) => {
   if (isLoading) return <div className="text-center py-8">Loading Growth Snapshot...</div>;
 
-  // KOREKSI DI SINI: Menggunakan backticks (`) untuk Template Literals
 const data = [
     { value: `${stats?.totalJobs ?? '50'}+`, label: 'Job Opportunities' },
     { value: `${stats?.totalEmployees ?? '350'}+`, label: 'Happy Employees' },

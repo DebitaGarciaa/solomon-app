@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import QueryProvider from "@/provider/QueryProvider"; // Impor provider baru
 
 // Import Plus Jakarta Sans
 const plusJakarta = Plus_Jakarta_Sans({
@@ -10,7 +11,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Dashboard", 
+  title: "Dashboard",
   description: "Admin Dashboard",
 };
 
@@ -21,10 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${plusJakarta.variable} antialiased`}
-      >
-        {children}
+      <body className={`${plusJakarta.variable} antialiased`}>
+        <QueryProvider>{children}</QueryProvider>
       </body>
     </html>
   );
