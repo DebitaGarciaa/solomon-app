@@ -12,3 +12,5 @@ export default function Home() {
 
   return null; // kosong, karena auto redirect
 }
+
+//INI AKU TD MECAHIN GLOBAL CSSNYA KE STYEL JD DI GLOBAL CC YANG APP ITU CUMA MANGGIL YANG DI STEYLNYAA YAKK

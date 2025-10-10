@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* core colors */
+  --background: #f7f8ff;
+  --foreground: #171717;
+  --primaryBlue: #005697;
+  --primaryBlue-700: #003e6b;
+  --secondaryBlue: #0b76d6;
+  --softBackground: #f1f5f9;
+  --dashboard-bg: #f5f5f5;
+  --accent-orange: #ff8a00;
+  --active-blue: #0087ff;
+
+  --primaryBlue-50: #f0f9ff;
+  --primaryBlue-100: #e0f2fe;
+  --primaryBlue-200: #bae6fd;
+  --primaryBlue-300: #7dd3fc;
+  --primaryBlue-400: #38bdf8;
+  --primaryBlue-500: #0ea5e9;
+  --primaryBlue-600: #0284c7;
+  --primaryBlue-700: #0369a1;
+  --primaryBlue-800: #075985;
+  --primaryBlue-900: #0c4a6e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--primaryBlue-700), var(--primaryBlue));
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  box-shadow: 0 10px 30px rgba(14,165,233,0.22);
+  border: none;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+}

@@ -1,0 +1,233 @@
+/* =============================== */
+/* 🔷 BACKGROUND SECTION */
+/* =============================== */
+.auth-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  background-image: url("/register.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+/* Layer putih lembut di belakang (bukan terlalu terang) */
+.auth-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.45),
+    rgba(255, 255, 255, 0.55)
+  );
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+/* Overlay tambahan transparan tipis biar ga silau */
+.auth-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+/* =============================== */
+/* 🔷 CARD SECTION */
+/* =============================== */
+.auth-card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 520px;
+  padding: 2.5rem;
+  border-radius: 1.8rem;
+  background: rgba(10, 34, 70, 0.8); /* warna biru tua transparan */
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* =============================== */
+/* 🔷 TITLE & SUBTITLE */
+/* =============================== */
+.auth-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+.auth-sub {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #dbeafe;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* =============================== */
+/* 🔷 TABS (Login / Register) */
+/* =============================== */
+.auth-tabs {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 4px;
+  margin-bottom: 1.2rem;
+}
+
+.auth-tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.auth-tab.active {
+  background: white;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+/* =============================== */
+/* 🔷 INPUT FIELD */
+/* =============================== */
+.input-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.8rem 2.5rem 0.8rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  outline: none;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Eye icon (lihat password) */
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* =============================== */
+/* 🔷 BAGIAN KIRI HEADER (Logo + Nama) */
+/* =============================== */
+.auth-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* jarak antara logo dan teks */
+}
+
+/* kalau kamu pakai gambar logo */
+.auth-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* nama aplikasi */
+.auth-logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  letter-spacing: 0.3px;
+}
+
+.auth-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 50;
+  border-radius: 0; 
+}
+
+
+/* Tombol "Back to Previous Page" */
+.back-button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+.back-button:hover {
+  background: linear-gradient(to right, #1e40af, #2563eb);
+  transform: translateY(-2px);
+}
+.back-button {
+  margin-right: 50px;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #1d4ed8, #3b82f6);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+  margin-top: 0.6rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+.btn-primary:hover {
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  transform: translateY(-2px);
+}
+
+/* =============================== */
+/* 🔷 RESPONSIVE (HP/TABLET) */
+/* =============================== */
+@media (max-width: 768px) {
+  .auth-card {
+    max-width: 90%;
+    padding: 1.8rem;
+  }
+
+  .auth-title {
+    font-size: 1.5rem;
+  }
+
+  .auth-sub {
+    font-size: 0.95rem;
+  }
+}
+
+label {
+  color: white;
+}

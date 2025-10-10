@@ -1,0 +1,60 @@
+.jobpost-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
+
+.jobpost-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primaryBlue);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Stepper */
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 4rem;
+  margin-bottom: 4rem;
+}
+
+.stepper-line {
+  position: absolute;
+  top: 50%;
+  left: 4rem;
+  right: 4rem;
+  height: 3px;
+  background: #e2e8f0;
+  transform: translateY(-50%);
+}
+
+.stepper-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stepper-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  display: grid;
+  place-items: center;
+}
+
+.stepper-step.active .stepper-icon {
+  background: #2563eb;
+  color: white;
+}
+
+.jobpost-form-card {
+  background: #e5e5e5;
+  border-radius: 1rem;
+  padding: 3rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}

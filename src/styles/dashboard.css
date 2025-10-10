@@ -1,0 +1,144 @@
+.dashboard-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--dashboard-bg);
+}
+
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--foreground);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar-brand img {
+  height: 38px;
+}
+
+.navbar-center-menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.navbar-menu a {
+  color: #475569;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 150ms ease;
+}
+
+.navbar-menu a.active {
+  color: var(--primaryBlue);
+  border-bottom: 3px solid var(--primaryBlue);
+}
+
+.navbar-menu a:hover {
+  color: var(--primaryBlue);
+}
+
+.main-content {
+  flex: 1;
+  padding: 2.5rem 2rem;
+}
+
+.cards-row {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.card.card-primary {
+  background: var(--active-blue);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 86, 151, 0.3);
+}
+
+.job-list-card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.job-item {
+  background: var(--active-blue);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 120px;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.job-item-details h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.job-item-details p {
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.job-metrics-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.job-metric-box {
+  background: white;
+  color: #171717;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.375rem;
+  text-align: center;
+}
+
+.job-metric-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primaryBlue-700);
+}
+
+.job-status {
+  background: var(--accent-orange);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+}

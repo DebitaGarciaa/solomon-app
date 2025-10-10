@@ -1,8 +1,6 @@
 // src/types/job.api.ts
 
-/**
- * Interface untuk objek Lowongan Kerja (Job) tunggal
- */
+
 export interface Job {
   id: string;
   title: string;
@@ -13,9 +11,7 @@ export interface Job {
   summary: string;
 }
 
-/**
- * Interface untuk metadata Paginasi (dari NestJS PaginationUtil)
- */
+
 export interface PaginationMeta {
   totalItems: number;
   itemCount: number;
