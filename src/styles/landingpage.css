@@ -1,0 +1,94 @@
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background-color: #0b1b3f; /* fallback color */
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 10;
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-text {
+  color: #003e6b;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.8);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #003e6b;
+}
+.hero-title span {
+  color: #0b76d6;
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.75rem;
+  color: #003e6b;
+  font-weight: 500;
+}
+
+/* search bar besar di bawah tulisan */
+.hero-searchbar {
+  background: white;
+  border-radius: 9999px;
+  padding: 1rem 1.25rem;
+  width: 85%;
+  max-width: 1100px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.search-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.6rem 1rem;
+  border-radius: 9999px;
+  color: #003e6b;
+  font-weight: 500;
+}
+
+.search-select {
+  border: none;
+  outline: none;
+  background: #f1f5f9;
+  padding: 0.6rem 1rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.btn-view-jobs {
+  background-color: #2563eb;
+  color: white;
+  border-radius: 9999px;
+  padding: 0.8rem 1.8rem;
+  font-weight: 600;
+}

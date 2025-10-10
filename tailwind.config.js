@@ -3,7 +3,7 @@ module.exports = {
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
-    "./src/modules/**/*.{js,ts,jsx,tsx}", // <-- TAMBAHKAN INI
+    "./src/modules/**/*.{js,ts,jsx,tsx}", // <-- bagus, biar detect module
   ],
   theme: {
     extend: {
@@ -14,7 +14,7 @@ module.exports = {
         gradientBlue: "#1e40af",
       },
       fontFamily: {
-        sans: ["var(--font-plus-jakarta)", "sans-serif"], // <-- SESUAIKAN INI
+        sans: ["var(--font-plus-jakarta)", "sans-serif"],
       },
       borderRadius: {
         xl: "1rem",
@@ -22,5 +22,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animate"), // ✅ tambahkan ini!
+  ],
 };
